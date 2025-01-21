@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Файл паролей",
+            "type": "shell",
+            "command": "nano /etc/passwd",
+            "problemMatcher": []
+        },
+        {
+            "label": "Теневой файл паролей",
+            "type": "shell",
+            "command": "sudo nano /etc/shadow",
+            "problemMatcher": []
+        },
+        {
+            "label": "Move PAM module to location",
+            "type": "shell",
+            "command": "sudo cp /home/as/KechkinDoc/pro/examples/tests/builds/build-test15_Login/test_pam_module/libtest_pam_module.so /lib/x86_64-linux-gnu/security/",
+            "problemMatcher": []
+        }
+    ]
+}
+
+
